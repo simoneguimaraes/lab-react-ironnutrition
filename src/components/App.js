@@ -5,6 +5,7 @@ import foodsSrc from '../foods.json';
 
 import Foodbox from './Foodbox';
 import Form from './Form';
+import SearchBar from './SearchBar';
 
 function App() {
   const [foods, setFoods] = useState(foodsSrc);
@@ -14,13 +15,7 @@ function App() {
     <div className="container">
       <h1 class="title">IronNutrition</h1>
       <div>
-        <input
-          type="text"
-          class="input search-bar"
-          name="search"
-          placeholder="Search"
-          value=""
-        />
+        <SearchBar />
       </div>
       <div className="column">
         <button
