@@ -24,7 +24,6 @@ function Form(props) {
     props.setFoods([...props.foods, formData]);
   }
 
-  console.log(formData);
   return (
     <form onSubmit={handleSubmit}>
       <div className="field">
